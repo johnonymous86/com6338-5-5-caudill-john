@@ -33,6 +33,8 @@ form.onsubmit = function(e) {
    
     newItem.appendChild(text);
     document.getElementById('todo-list').appendChild(newItem);
+    listButton.appendChild(newItem);
+    document.getElementById('li').appendChild(listButton);
     listButton.style = 'text-decoration: line';
     }
    
