@@ -29,12 +29,12 @@ form.onsubmit = function(e) {
    
     var text = document.createTextNode(data);
     var newItem = document.createElement('li');
-  
+    var newButton = document.createElement('button');
    
     newItem.appendChild(text);
     document.getElementById('todo-list').appendChild(newItem);
     listButton.appendChild(newItem);
-    document.getElementById('li').appendChild(listButton);
+    document.getElementById('li').appendChild(newButton);
     listButton.style = 'text-decoration: line';
     }
    
