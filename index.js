@@ -1,19 +1,25 @@
-//ANY BUTTON INSIDE A FORM AUTO BECOMES A SUBMIT--TYPE
+//NOTE: ANY BUTTON INSIDE A FORM AUTO BECOMES A SUBMIT--TYPE
 //IS REDUNDANT
+
+
 //access form data by targeting input
 //and prevents form submission &
-//page reload
+//page reload.
+//onsubmit event looks for data variable which is input value
+//prevent default avoids reload onsubmit
+//'if/else if' allows for form validation
+//if data input, newItem variable allows for creation of list item
+//listButton var grabs that list item and creates button element
+//unable to finalize clickablity of list item or text-decoration: line on second click
 
 
 
-//try a simple if/else statement first and build up from that. save your work and document
 
 var form = document.querySelector('form');
 var ul = document.querySelector('todo-list');
 var data = document.querySelector('input').value;
 var nodata = document.querySelector(!'input')
 var listButton = document.getElementById('li')
-
 
 
 form.onsubmit = function(e) {
@@ -32,13 +38,12 @@ form.onsubmit = function(e) {
    
     else if (nodata)
         {return}
-
     
 } 
 
 
 
-/*everything below this line was a failed attempt
+/*prior attempts below this line
 
   listButton.onsubmit = function(e) {
         e.preventDefault();
